@@ -1,0 +1,126 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<link rel="icon" type="image/png" href="./assign-images/codepen2.png">
+		<title>Good vibes form</title>
+		<link rel="stylesheet" type="text/css" href="./goodvibeform.css"></link>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./assign-css/all.min.css">
+
+	</head>
+		<body>
+		<header>
+			<div class="root-image"><img src="./assign-images/codepen1.png" ></div>
+
+			<div class="item-details-root">
+				 <p class="root-title">Good Vibes Form</p>
+				<div class="item-root-links"><a class="link-laurence" href="#">Laurence</a>
+				<a class="link-follow" href="#">+ Follow</a></div>
+			</div>
+			<div id="header-right"> 
+				<button class="btn"><i class="fas fa-heart"></i></button>
+				<button  onclick="chngView()" class="btn"><i class="fas fa-camera-retro"></i><span class="disappear-name"> Change view</span></button>
+					<div id="chngview-dropdown">
+						<h4>Open this pen in:</h4>
+						<a href="#">Editor View</a>
+						<a href="#">Details View</a>
+						<a href="#">Full Page View</a>
+					</div>
+				<button class="btn btn-signup">Sign Up</button>
+				<button class="btn">Log In </button>
+			</div>
+
+		</header>
+		<main>
+			<div id="full-section">
+				<h1 class="form-title">Good Vibes Form</h1>
+
+			
+			<div id="main-section">
+				<p class="sub-heading">Tell me something positive that happened to you today.</p>
+			
+			<form>
+				
+
+				<div class="form-rows">
+					<div class="labels">
+					<label for="name">Name</label></div>
+					
+					<div class="feilds"><input class="input-fields" type="text" name="name" placeholder="Enter your name" required>
+					</div>
+				</div>
+
+				<div class="form-rows">
+					<div class="labels">
+					<label for="email">Email</label></div>
+					
+					<div class="feilds"><input class="input-fields" type="email" name="email" placeholder="Enter your email" required>
+					</div>
+				</div>
+
+				<div class="form-rows">
+					<div class="labels"><label>On a scale of 1-10, how good was it?</label></div>
+					<div class="feilds"><input class="input-fields" type="number" name="number" min="1" max="10" placeholder="Enter a number between 1 and 10"></div>
+					</div>
+				
+
+				<div class="form-rows">	
+					 <div class="labels">
+					  <label for="place">Where did it happen</label></div>
+					 <div class="feilds">
+						 <select id="place" name="place" >
+						 	<option value="home">At Home</option>
+						 	<option value="commute">On my Commute</option>
+						 	<option value="work">At Work</option>
+						 	<option value="street">On the Street</option>
+						 	<option value="other">Other</option>
+						 </select>
+					</div>
+				</div>
+
+				
+				<div class="form-rows">	
+				 	<div class="labels"><label>At what time of the day did it happen?</label></div>
+				 	<div  class="feilds">
+					 	<ul class="list-wise">
+					 	<li><label><input type="radio" name="time" value="Morning"> Morning</label></li>
+
+					 	<li><label><input type="radio" name="time" value="Afternoon"> Afternoon</label></li>
+
+					 	<li><label><input type="radio" name="time" value="Evening"> Evening</label></li>
+					 	</ul>
+				 </div>
+				</div>
+
+
+				<div class="form-rows">	
+				 <div class="labels"><label>What emotions did you experience?<br>(Select all that apply)</label></div>
+				<div class="feilds">
+					 <ul class="list-wise" >
+						<li> <label><input  type="checkbox" name="emotions" value="excited"> Excited</label></li>
+						 <li><label><input  type="checkbox" name="emotions" value="humbled"> Humbled</label></li>
+						 <li> <label><input type="checkbox" name="emotions" value="elated"> Elated</label></li>
+						 <li> <label><input type="checkbox" name="emotions" value="ethusiastic"> Enthusiastic</label></li>
+						 <li> <label><input type="checkbox" name="emotions" value="loved"> Loved</label></li>
+					 </ul>
+				 </div>
+				</div>
+				<div class="form-rows">
+				 <div class="labels"><label>Please describe your positive experience</label></div>
+				 
+				 <div class="feilds"> <textarea class="input-fields" placeholder="Enter your experience here..."></textarea></div>
+				 </div>
+				 <div><input class="submit-btn" type="submit" name="submit" value="submit"></div>
+			</form>
+			</div>
+			</div>
+		</main>
+	</body>
+	<script >
+		function chngView(){
+			document.getElementById("chngview-dropdown").classList.toggle("show");
+
+
+		}
+	</script>
+	</html>
