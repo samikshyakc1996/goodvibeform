@@ -18,7 +18,7 @@
 				<a class="link-follow" href="#">+ Follow</a></div>
 			</div>
 			<div id="header-right"> 
-				<button class="btn"><i class="fas fa-heart"></i></button>
+				<button class="btn btn-heart"><i class="fas fa-heart"></i></button>
 				<button  onclick="chngView()" class="btn"><i class="fas fa-camera-retro"></i><span class="disappear-name"> Change view</span></button>
 					<div id="chngview-dropdown">
 						<h4>Open this pen in:</h4>
@@ -46,7 +46,7 @@
 					<div class="labels">
 					<label for="name">Name</label></div>
 					
-					<div class="feilds"><input class="input-fields" type="text" name="name" placeholder="Enter your name" required>
+					<div class="feilds"><input class="input-fields" type="text" name="name" placeholder=" Enter your name" required>
 					</div>
 				</div>
 
@@ -54,13 +54,13 @@
 					<div class="labels">
 					<label for="email">Email</label></div>
 					
-					<div class="feilds"><input class="input-fields" type="email" name="email" placeholder="Enter your email" required>
+					<div class="feilds"><input class="input-fields" type="email" name="email" placeholder=" Enter your email" required>
 					</div>
 				</div>
 
 				<div class="form-rows">
 					<div class="labels"><label>On a scale of 1-10, how good was it?</label></div>
-					<div class="feilds"><input class="input-fields" type="number" name="number" min="1" max="10" placeholder="Enter a number between 1 and 10"></div>
+					<div class="feilds"><input class="input-fields" type="number" name="number" min="1" max="10" placeholder=" Enter a number between 1 and 10"></div>
 					</div>
 				
 
@@ -83,11 +83,11 @@
 				 	<div class="labels"><label>At what time of the day did it happen?</label></div>
 				 	<div  class="feilds">
 					 	<ul class="list-wise">
-					 	<li><label><input type="radio" name="time" value="Morning"> Morning</label></li>
+					 	<li><label><input class="radio" type="radio" name="time" value="Morning"> Morning</label></li>
 
-					 	<li><label><input type="radio" name="time" value="Afternoon"> Afternoon</label></li>
+					 	<li><label><input class="radio" type="radio" name="time" value="Afternoon"> Afternoon</label></li>
 
-					 	<li><label><input type="radio" name="time" value="Evening"> Evening</label></li>
+					 	<li><label><input class="radio" type="radio" name="time" value="Evening"> Evening</label></li>
 					 	</ul>
 				 </div>
 				</div>
@@ -97,18 +97,18 @@
 				 <div class="labels"><label>What emotions did you experience?<br>(Select all that apply)</label></div>
 				<div class="feilds">
 					 <ul class="list-wise" >
-						<li> <label><input  type="checkbox" name="emotions" value="excited"> Excited</label></li>
-						 <li><label><input  type="checkbox" name="emotions" value="humbled"> Humbled</label></li>
-						 <li> <label><input type="checkbox" name="emotions" value="elated"> Elated</label></li>
-						 <li> <label><input type="checkbox" name="emotions" value="ethusiastic"> Enthusiastic</label></li>
-						 <li> <label><input type="checkbox" name="emotions" value="loved"> Loved</label></li>
+						<li> <label><input class="checkbox" type="checkbox" name="emotions" value="excited"> Excited</label></li>
+						 <li><label><input  class="checkbox" type="checkbox" name="emotions" value="humbled"> Humbled</label></li>
+						 <li> <label><input class="checkbox" type="checkbox" name="emotions" value="elated"> Elated</label></li>
+						 <li> <label><input class="checkbox" type="checkbox" name="emotions" value="ethusiastic"> Enthusiastic</label></li>
+						 <li> <label><input class="checkbox" type="checkbox" name="emotions" value="loved"> Loved</label></li>
 					 </ul>
 				 </div>
 				</div>
 				<div class="form-rows">
 				 <div class="labels"><label>Please describe your positive experience</label></div>
 				 
-				 <div class="feilds"> <textarea class="input-fields" placeholder="Enter your experience here..."></textarea></div>
+				 <div class="feilds"> <textarea class="input-fields" placeholder=" Enter your experience here..."></textarea></div>
 				 </div>
 				 <div><input class="submit-btn" type="submit" name="submit" value="submit"></div>
 			</form>
